@@ -13,7 +13,8 @@ body {
     background-image: url(../imagenes/pageBg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: fixed;
+    background-attachment: fixed;
   }
 
   /* Estilos para el encabezado */
