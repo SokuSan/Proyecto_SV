@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stardew valley - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="../estilos/home.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1></h1>
+  </header>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-2 ">
+        <div class="col-md-3">
+            <nav>
+                <!-- Aquí va el contenido del nav de la página -->
+                <div class="container-fluid" id="navDiv">
+                    <div class="row">
+                        <nav class="col-md-2 d-none d-md-block bg-light sidebar" >
+                            <div class="position-sticky pt-3">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                                    </li>
+                                    <br>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="menu_jugador.html">Menú del Jugador</a>
+                                    </li>
+                                    <br>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="tipos_granja.html">Tipos de Granja</a>
+                                    </li>
+                                    <br>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="herramientas_armas.html">Herramientas y Armas</a>
+                                    </li>
+                                    <br>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="conceptos_random.html">Conceptos Random</a>
+                                    </li>
+                                    <br>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="centro_civico.html">Centro Cívico</a>
+                                    </li>
+                                    <br>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="aldeanos.html">Aldeanos</a>
+                                    </li>
+                                    <br>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="aldeanos.html">Animales</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+            </nav>
+        </div>
+      </div>
+      <div class="col-10">
+        <section>
+          <img src="../imagenes/logo.png" alt="Logo del juego" class="mx-auto d-block">
+          <div class="alert alert-info alert-dismissible">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            <strong>Info!</strong> Esta web es puramente informativa. Sólo una guia. Recomendamos altamente entrar en la web oficial de la wiki de stardew valley para obtener toda la información acerca de este juego.
+            <a href="https://es.stardewvalleywiki.com/Stardew_Valley_Wiki">Enlace directo a la Wiki</a>
+          </div>
+          <div class="mt-4 p-5 rounded" id="jumbotron">
+            <p>Stardew Valley es un RPG de vida en el campo. Hereda la vieja granja de tu abuelo en Ciudad Pelícano y con solo herramientas de segunda mano y 500€ empiezas tu nueva averntura. ¿Podrás aprender a vivir de la tierra y a convertir esos campos de malezas en un hogar próspero? No va a ser fácil. Desde que Joja Corporation llegó a la ciudad, las antiguas formas de vivir han desaparecido. El centro comunitario, en su momento el centro de actividad más activo de la ciudad, se encuentra ahora en ruinas. Pero el valle se encuentra lleno de oportunidades.</p>
+          </div>
+          <br>
+          <div  class="d-flex justify-content-center">
+            <div class="mt-4 p-5 rounded" id="jumbotron" style="width: 60%; float: left;">
+              <p>Esta web fue creada para hacer un poco de guía para las personas que acaban de comprarse el juego y no saben muy bien por donde empezar, que hacer, como hacerlo...
+                Es la guía que a nosotras nos hubiese gustado tener al empezar esta maravillosa historia de llevar tu propia granja, en resumen.
+                En Stardew Valley podrás cosechar tus propios cultivos, producir procesados a través de tus animales, pescar, minar... Incluso puedes hacer amistad con las personas de Pueblo Pelícano y descubrir la historia detrás del propio pueblo y de cada uno de sus habitantes. (Hasta casarte con ellos, vaya, juju)
+              </p>
+              <br>
+              <p>El desarrollador, ConcernedApe, es Eric Barone, el creador y desarrollador principal de Stardew Valley, así como el nombre de la empresa que fundó para continuar con el desarrollo del juego. Desde 2012 hasta 2019, programó todo el juego (excepto la conexión en red multijugador en la versión 1.3) y creó todo el arte, los efectos de sonido y la música. Actualmente reside en Seattle, EEUU.
+  
+                A principios de 2019, ConcernedApe contrató a un pequeño equipo de desarrollo para seguir actualizando el juego. La versión 1.4 del juego fue desarrollada por ConcernedApe, Arthur Lee (alias Mr. Podunkian) y Alex Erlandson (alias zillix). La versión 1.5 del juego fue desarrollada por ConcernedApe y Arthur Lee.</p>
+                
+              </div>
+              <img src="../imagenes/concernedApe.gif" alt="Logo animado de ConcernedApe" class="mx-auto d-block" id="logoConcernedApe" ">
+          </div>
+          <br>
+          <br>
+          <div class="col-10" id="jumbotron">
+            <form>
+              <h2>Formulario informativo</h2>
+              <div class="mb-3 mt-3">
+                <label for="uname" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="uname" placeholder="Introduce tu nombre" name="uname" required>
+                <div class="valid-feedback">Valido.</div>
+                <div class="invalid-feedback">Rellena este campo.</div>
+              </div>
+              <div class="input-group">
+                <span class="input-group-text">Edad</span>
+                <input type="number" class="form-control" placeholder="Edad">
+              </div>
+              <div class="mb-3">
+                <label for="pwd" class="form-label">Cuenta bancaria:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Cuenta bancaria" name="pswd" required>
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Por favor, somos pobres.</div>
+              </div>
+              <div class="form-floating">
+                <textarea class="form-control" id="comment" name="text" placeholder="Comment goes here"></textarea>
+                <label for="comment">Comentarios</label>
+              </div>
+
+
+              <label for="sel1" class="form-label">¿Cuál es tu perro favorito?</label>
+              <select class="form-select" id="sel1" name="sellist1">
+              <option>Pastor Alemán</option>
+              <option>Beagle</option>
+              <option>Cualquier perro es una buena opción</option>
+              </select>
+              <br>
+              <p>¿Cuál es tu color de gato favorito?</p>
+              <input type="radio" id="naranja" name="animal" value="naranja">
+              <label for="naranja">Naranja</label><br>
+              <input type="radio" id="gris" name="animal" value="gris">
+              <label for="gris">Gris</label><br>
+              <input type="radio" id="amarillo" name="animal" value="amarillo">
+              <label for="amarillo">Amarillo</label><br>
+              <br>
+
+              <p>¿Cuál es tu granja favorita?</p>
+              <input type="radio" id="estandar" name="granja" value="estandar">
+              <label for="estandar">Estándar</label><br>
+              <input type="radio" id="minera" name="granja" value="minera">
+              <label for="minera">Minera</label><br>
+              <input type="radio" id="salvaje" name="granja" value="salvaje">
+              <label for="salvaje">Salvaje</label><br>
+              <input type="radio" id="fluvial" name="granja" value="fluvial">
+              <label for="fluvial">Fluvial</label><br>
+              <input type="radio" id="playa" name="granja" value="playa">
+              <label for="playa">Playa</label><br>
+              <input type="radio" id="esquinas" name="granja" value="esquinas">
+              <label for="esquinas">Esquinas</label><br>
+              <input type="radio" id="forestal" name="granja" value="forestal">
+              <label for="forestal">Forestal</label>
+              <br>
+              <br>
+            
+
+              <label for="customRange" class="form-label">Que estación te gusta más? (empezando por primavera a la izquierda e invierno a la derecha)</label>
+              <input type="range" class="form-range" id="customRange" name="points" min="0" max="3">
+
+              <input type="submit" value="Enviar">
+            </form>
+            
+          </div>
+
+        </section>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
