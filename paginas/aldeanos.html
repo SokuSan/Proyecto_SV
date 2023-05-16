@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <header>
     <h1>ALDEANOS</h1>
@@ -18,68 +20,190 @@
 
   <div class="container-fluid">
     <div class="row">
-      <div class="col-2 ">
-        <div class="col-md-3">
-            <nav>
-                <!-- Aquí va el contenido del nav de la página -->
-                <div class="container-fluid" id="navDiv">
-                    <div class="row">
-                        <nav class="col-md-2 d-none d-md-block bg-light sidebar" >
-                            <div class="position-sticky pt-3">
-                                <ul class="nav flex-column">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" href="home.html">Home</a>
-                                    </li>
-                                    <br>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="menu_jugador.html">Menú del Jugador</a>
-                                    </li>
-                                    <br>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="tipos_granja.html">Tipos de Granja</a>
-                                    </li>
-                                    <br>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="herramientas_armas.html">Herramientas y Armas</a>
-                                    </li>
-                                    <br>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="conceptos_random.html">Conceptos Random</a>
-                                    </li>
-                                    <br>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="centro_civico.html">Centro Cívico</a>
-                                    </li>
-                                    <br>
-                                    <li class="nav-item">
-                                        <a class="nav-link" aria-current="page" href="aldeanos.html">Aldeanos</a>
-                                    </li>
-                                    <br>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="animales.html">Animales</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
-            </nav>
+      <div class="col-md-3">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <!-- Aquí va el contenido del nav de la página -->
+          <div class="container-fluid" id="navDiv">
+
+            <div class="row">
+              <nav class="navbar navbar-default" role="navigation">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                </div>
+                <div class="navbar-collapse collapse" id="navbarNav">
+                  <ul class="navbar-nav flex-column">
+                    <li class="nav-item pull-left">
+                      <a class="nav-link" href="menu_jugador.html">Menú del Jugador</a>
+                    </li>
+                    <br>
+                    <li class="nav-item pull-left">
+                      <a class="nav-link" href="tipos_granja.html">Tipos de Granja</a>
+                    </li>
+                    <br>
+                    <li class="nav-item pull-left">
+                      <a class="nav-link" href="herramientas_armas.html">Herramientas y Armas</a>
+                    </li>
+                    <br>
+                    <li class="nav-item pull-left">
+                      <a class="nav-link" href="conceptos_random.html">Conceptos Random</a>
+                    </li>
+                    <br>
+                    <li class="nav-item pull-left">
+                      <a class="nav-link" href="centro_civico.html">Centro Cívico</a>
+                    </li>
+                    <br>
+                    <li class="nav-item pull-left">
+                      <a class="nav-link" href="aldeanos.html">Aldeanos</a>
+                    </li>
+                    <br>
+                    <li class="nav-item pull-left">
+                      <a class="nav-link" href="aldeanos.html">Animales</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+
+
+      <div class="col-md-9 flex-wrap">
+        <!-- Añadir carousel aquí?-->
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card flex-item m-2 p-1">
+              <img class="card-img-top" src="../imagenes/noCasables/robin.png" alt="Card image">
+              <div class="card-body bg-light">
+                <h4 class="card-title">Robin</h4>
+                <p class="card-text">Info info info info info info info info info info info info info info info info
+                  info info info</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card flex-item m-2 p-1">
+              <div class="card-body">
+                <h4 class="card-title">Willy</h4>
+                <p class="card-text">Info info info info info info info info info info info info info info info info
+                  info info info</p>
+              </div>
+              <img class="card-img-bottom" src="../imagenes/noCasables/willy.png" alt="Card image">
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card flex-item m-2 p-1">
+              <img class="card-img-top" src="../imagenes/noCasables/pierre.png" alt="Card image">
+              <div class="card-body bg-light">
+                <h4 class="card-title">Pierre</h4>
+                <p class="card-text">Info info info info info info info info info info info info info info info info
+                  info info info</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card flex-item m-2 p-1">
+              <div class="card-body">
+                <h4 class="card-title">Pam</h4>
+                <p class="card-text">Info info info info info info info info info info info info info info info info
+                  info info info</p>
+              </div>
+              <img class="card-img-bottom" src="../imagenes/noCasables/pam.png" alt="Card image">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card flex-item m-2 p-1">
+              <img class="card-img-top" src="../imagenes/noCasables/morris.png" alt="Card image">
+              <div class="card-body bg-light">
+                <h4 class="card-title">Morris</h4>
+                <p class="card-text">Info info info info info info info info info info info info info info info info
+                  info info info</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card flex-item m-2 p-1">
+              <div class="card-body">
+                <h4 class="card-title">Marlon</h4>
+                <p class="card-text">Info info info info info info info info info info info info info info info info
+                  info info info</p>
+              </div>
+              <img class="card-img-bottom" src="../imagenes/noCasables/marlon.png" alt="Card image">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card flex-item m-2 p-1">
+              <img class="card-img-top" src="../imagenes/noCasables/mago.png" alt="Card image">
+              <div class="card-body bg-light">
+                <h4 class="card-title">Mago</h4>
+                <p class="card-text">Info info info info info info info info info info info info info info info info
+                  info info info</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card flex-item m-2 p-1">
+              <div class="card-body">
+                <h4 class="card-title">Lewis</h4>
+                <p class="card-text">Info info info info info info info info info info info info info info info info
+                  info info info</p>
+              </div>
+              <img class="card-img-bottom" src="../imagenes/noCasables/lewis.png" alt="Card image">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card flex-item m-2 p-1">
+              <img class="card-img-top" src="../imagenes/noCasables/gus.png" alt="Card image">
+              <div class="card-body bg-light">
+                <h4 class="card-title">Gus</h4>
+                <p class="card-text">Info info info info info info info info info info info info info info info info
+                  info info info</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card flex-item m-2 p-1">
+              <div class="card-body">
+                <h4 class="card-title">Gunther</h4>
+                <p class="card-text">Info info info info info info info info info info info info info info info info
+                  info info info</p>
+              </div>
+              <img class="card-img-bottom" src="../imagenes/noCasables/gunther.png" alt="Card image">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card flex-item m-2 p-1">
+              <img class="card-img-top" src="../imagenes/noCasables/enano.png" alt="Card image">
+              <div class="card-body bg-light">
+                <h4 class="card-title">Enano</h4>
+                <p class="card-text">Info info info info info info info info info info info info info info info info
+                  info info info</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card flex-item m-2 p-1">
+              <div class="card-body">
+                <h4 class="card-title">Clint</h4>
+                <p class="card-text">Info info info info info info info info info info info info info info info info
+                  info info info</p>
+              </div>
+              <img class="card-img-bottom" src="../imagenes/noCasables/clint.png" alt="Card image">
+            </div>
+          </div>
+
+
+
+
+
         </div>
       </div>
-      <div class="col-10">
-        <section>
-          <p>¿Qué es Lorem Ipsum?
-            Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
-            
-            ¿Por qué lo usamos?
-            Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem Ipsum" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo).
-            
-            
-            ¿De dónde viene?
-            Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza cl´sica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de la Universidad de Hampden-Sydney en Virginia, encontró una de las palabras más oscuras de la lengua del latín, "consecteur", en un pasaje de Lorem Ipsum, y al seguir leyendo distintos textos del latín, descubrió la fuente indudable. Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de "de Finnibus Bonorum et Malorum" (Los Extremos del Bien y El Mal) por Cicero, escrito en el año 45 antes de Cristo. Este libro es un tratado de teoría de éticas, muy popular durante el Renacimiento. La primera linea del Lorem Ipsum, "Lorem ipsum dolor sit amet..", viene de una linea en la sección 1.10.32
-            
-            El trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo para aquellos interesados. Las secciones 1.10.32 y 1.10.33 de "de Finibus Bonorum et Malorum" por Cicero son también reproducidas en su forma original exacta, acompañadas por versiones en Inglés de la traducción realizada en 1914 por H. Rackham.</p>
-        </section>
-      </div>
+
     </div>
-  </div>
+
 </body>
-</html>
