@@ -13,60 +13,67 @@
 </head>
 <body>
   <header>
-    <h1></h1>
+    <h1><img src="../imagenes/logo.png" alt="Logo del juego" class="mx-auto d-block"></h1>
   </header>
 
   <div class="container-fluid">
     <div class="row">
-      <div class="col-2 ">
-        <div class="col-md-3">
-            <nav>
-                <!-- Aquí va el contenido del nav de la página -->
-                <div class="container-fluid" id="navDiv">
-                    <div class="row">
-                        <nav class="col-md-2 d-none d-md-block bg-light sidebar" >
-                            <div class="position-sticky pt-3">
-                                <ul class="nav flex-column">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
-                                    </li>
-                                    <br>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="menu_jugador.html">Menú del Jugador</a>
-                                    </li>
-                                    <br>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="tipos_granja.html">Tipos de Granja</a>
-                                    </li>
-                                    <br>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="herramientas_armas.html">Herramientas y Armas</a>
-                                    </li>
-                                    <br>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="conceptos_random.html">Conceptos Random</a>
-                                    </li>
-                                    <br>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="centro_civico.html">Centro Cívico</a>
-                                    </li>
-                                    <br>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="aldeanos.html">Aldeanos</a>
-                                    </li>
-                                    <br>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="aldeanos.html">Animales</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
-            </nav>
-        </div>
+      <div class="col-md-3">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <!-- Aquí va el contenido del nav de la página -->
+          <div class="container-fluid" id="navDiv">
+
+            <div class="row">
+              <nav class="navbar navbar-default" role="navigation">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                </div>
+                <div class="navbar-collapse collapse" id="navbarNav">
+                  <ul class="navbar-nav flex-column">
+                    <li class="nav-item pull-left">
+                      <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <br>
+                    <li class="nav-item pull-left">
+                      <a class="nav-link" href="menu_jugador.html">Menú del Jugador</a>
+                    </li>
+                    <br>
+                    <li class="nav-item pull-left">
+                      <a class="nav-link" href="tipos_granja.html">Tipos de Granja</a>
+                    </li>
+                    <br>
+                    <li class="nav-item pull-left">
+                      <a class="nav-link" href="herramientas_armas.html">Herramientas y Armas</a>
+                    </li>
+                    <br>
+                    <li class="nav-item pull-left">
+                      <a class="nav-link" href="conceptos_random.html">Conceptos Random</a>
+                    </li>
+                    <br>
+                    <li class="nav-item pull-left">
+                      <a class="nav-link" href="centro_civico.html">Centro Cívico</a>
+                    </li>
+                    <br>
+                    <li class="nav-item pull-left">
+                      <a class="nav-link" href="aldeanos.html">Aldeanos</a>
+                    </li>
+                    <br>
+                    <li class="nav-item pull-left">
+                      <a class="nav-link" href="aldeanos.html">Animales</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </nav>
       </div>
-      <div class="col-10">
+      <div class="col-9">
         <section>
-          <img src="../imagenes/logo.png" alt="Logo del juego" class="mx-auto d-block">
+          
           <div class="alert alert-info alert-dismissible">
             <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
             <strong>Info!</strong> Esta web es puramente informativa. Sólo una guia. Recomendamos altamente entrar en la web oficial de la wiki de stardew valley para obtener toda la información acerca de este juego.
@@ -93,7 +100,7 @@
           <br>
           <br>
           <div class="col-10" id="jumbotron">
-            <form>
+            <form class="m-4">
               <h2>Formulario informativo</h2>
               <div class="mb-3 mt-3">
                 <label for="uname" class="form-label">Nombre</label>

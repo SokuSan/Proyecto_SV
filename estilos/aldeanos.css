@@ -69,6 +69,11 @@ h1 {
   background-color: #B7CAA5;
   border-radius: 20px;
 }
+.navbar-nav > li {
+  float: none;
+  display: inline-block;
+  padding-top: 10px;
+}
 
 /* Estilos para la sección principal */
 section {
