@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
 </head>
 
 <body>
@@ -77,8 +78,13 @@
 
       <div class="col-md-9">
         <section>
-          <div class="mt-4 p-5 rounded" id="jumbotron"> <p>Tabla con barrita</p>
-            <table class="table table-striped">
+          
+          <div class="mt-4 p-5 rounded" id="jumbotron"> 
+            <p>Búsqueda de herramientas:</p>  
+  <input class="form-control" id="myInputHerramienta" type="text" placeholder="Search..">
+  <br>
+            <p>Tabla con barrita</p>
+            <table class="table table-striped" id="myTableHerramienta">
               <thead>
                 <tr>
                   <th>Imagen</th>
@@ -170,8 +176,12 @@
               </tbody>
             </table></div>
           <div class="mt-4 p-5 rounded" id="jumbotron"> <p>Info herramientas</p></div>
-          <div class="mt-4 p-5 rounded" id="jumbotron"> <p>Tabla con barrita</p>
-            <table class="table table-striped">
+         
+            <div class="mt-4 p-5 rounded" id="jumbotron"> 
+              <p>Búsqueda de armas:</p>  
+    <input class="form-control" id="myInputArma" type="text" placeholder="Search..">
+    <br><p>Tabla con barrita</p>
+            <table class="table table-striped" id="myTableArma">
               <thead>
                 <tr>
                   <th>Imagen</th>
@@ -210,6 +220,25 @@
       </div>
     </div>
 
+    <script>
+      $(document).ready(function(){
+       $("#myInputHerramienta").on("keyup", function() {
+       var value = $(this).val().toLowerCase();
+       $("#myTableHerramienta tr").filter(function() {
+       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+       });
+       });
+      });
+      $(document).ready(function(){
+       $("#myInputArma").on("keyup", function() {
+       var value = $(this).val().toLowerCase();
+       $("#myTableArma tr").filter(function() {
+       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+       });
+       });
+      });
+      </script>
+      
 </body>
 
 </html>
