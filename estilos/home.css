@@ -93,7 +93,11 @@ header {
     padding-top: 10px;
   }
   
-  
+  #mapa {
+    width: 100%;
+    height: 300px;
+    border: 4px solid #000;
+    }
   
   
 

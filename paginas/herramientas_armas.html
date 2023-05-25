@@ -12,233 +12,232 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <link rel="icon" href="../imagenes/animales/gallinaAzul.png" type="image/png">
 </head>
+<header>
+  <h1><img src="../imagenes/logo.png" alt="Logo del juego" class="mx-auto d-block"></h1>
+  <h2 class="text-warning">Herramientas y Armas</h2>
+</header>
 
-<body>
-  <header>
-    <h1>HERRAMIENTAS Y ARMAS</h1>
-  </header>
-
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-3">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <!-- Aquí va el contenido del nav de la página -->
-          <div class="container-fluid" id="navDiv">
-
-            <div class="row">
-              <nav class="navbar navbar-default " role="navigation">
-                <div class="navbar-header">
-                  <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                </div>
-                <div class="navbar-collapse collapse" id="navbarNav">
-                  <ul class="navbar-nav flex-column">
-                    <li class="nav-item pull-left">
-                      <a class="nav-link" href="home.html">Home</a>
-                    </li>
-                    <br>
-                    <li class="nav-item pull-left">
-                      <a class="nav-link" href="menu_jugador.html">Menú del Jugador</a>
-                    </li>
-                    <br>
-                    <li class="nav-item pull-left">
-                      <a class="nav-link" href="tipos_granja.html">Tipos de Granja</a>
-                    </li>
-                    <br>
-                    <li class="nav-item pull-left">
-                      <a class="nav-link" href="herramientas_armas.html">Herramientas y Armas</a>
-                    </li>
-                    <br>
-                    <li class="nav-item pull-left">
-                      <a class="nav-link" href="conceptos_random.html">Conceptos Random</a>
-                    </li>
-                    <br>
-                    <li class="nav-item pull-left">
-                      <a class="nav-link" href="centro_civico.html">Centro Cívico</a>
-                    </li>
-                    <br>
-                    <li class="nav-item pull-left">
-                      <a class="nav-link" href="aldeanos.html">Aldeanos</a>
-                    </li>
-                    <br>
-                    <li class="nav-item pull-left">
-                      <a class="nav-link" href="animales.html">Animales</a>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- Aquí va el contenido del nav de la página -->
+            <div class="container-fluid" id="navDiv">
+  
+              <div class="row">
+                <nav class="navbar navbar-default " role="navigation">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  </div>
+                  <div class="navbar-collapse collapse" id="navbarNav">
+                    <ul class="navbar-nav flex-column">
+                      <li class="nav-item pull-left">
+                        <a class="nav-link" href="home.html">Home</a>
+                      </li>
+                      <br>
+                      <li class="nav-item pull-left">
+                        <a class="nav-link" href="menu_jugador.html">Menú del Jugador</a>
+                      </li>
+                      <br>
+                      <li class="nav-item pull-left">
+                        <a class="nav-link" href="tipos_granja.html">Tipos de Granja</a>
+                      </li>
+                      <br>
+                      <li class="nav-item pull-left">
+                        <a class="nav-link" href="herramientas_armas.html">Herramientas y Armas</a>
+                      </li>
+                      <br>
+                      <li class="nav-item pull-left">
+                        <a class="nav-link" href="conceptos_random.html">Conceptos Random</a>
+                      </li>
+                      <br>
+                      <li class="nav-item pull-left">
+                        <a class="nav-link" href="centro_civico.html">Centro Cívico</a>
+                      </li>
+                      <br>
+                      <li class="nav-item pull-left">
+                        <a class="nav-link" href="aldeanos.html">Aldeanos</a>
+                      </li>
+                      <br>
+                      <li class="nav-item pull-left">
+                        <a class="nav-link" href="animales.html">Animales</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
             </div>
-          </div>
-        </nav>
-      </div>
-
-
-      <div class="col-md-9">
-        <section>
-          
-          <div class="mt-4 p-5 rounded" id="jumbotron"> 
-            <p>Búsqueda de herramientas:</p>  
-  <input class="form-control" id="myInputHerramienta" type="text" placeholder="Search..">
-  <br>
-            <p>Herramientas</p>
-            <table class="table table-striped" id="myTableHerramienta">
-              <thead>
-                <tr>
-                  <th>Imagen</th>
-                  <th>Nombre</th>
-                  <th>Precio</th>
-                  <th>Ingredientes</th>
-                  <th>Mejoras</th>
-                </tr>
-              </thead>
-              <tbody>
-                <!--Azadas-->
-                <tr>
-                  <td><img src="../imagenes/herramientasArmas/azada.png" alt="Azada"></td>
-                  <td>Azada</td>
-                  <td>Herramienta inicial</td>
-                  <td>N/A</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td><img src="../imagenes/herramientasArmas/azadaCobre.png" alt="Azada de cobre"></td>
-                  <td>Azada</td>
-                  <td>2000 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-coin" viewBox="0 0 16 16">
-                    <path d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z"/>
-                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                    <path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/>
-                  </svg></td>
-                  <td>Lingote de cobre <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-5-circle" viewBox="0 0 16 16">
-                    <path d="M1 8a7 7 0 1 1 14 0A7 7 0 0 1 1 8Zm15 0A8 8 0 1 0 0 8a8 8 0 0 0 16 0Zm-8.006 4.158c-1.57 0-2.654-.902-2.719-2.115h1.237c.14.72.832 1.031 1.529 1.031.791 0 1.57-.597 1.57-1.681 0-.967-.732-1.57-1.582-1.57-.767 0-1.242.45-1.435.808H5.445L5.791 4h4.705v1.103H6.875l-.193 2.343h.064c.17-.258.715-.68 1.611-.68 1.383 0 2.561.944 2.561 2.585 0 1.687-1.184 2.806-2.924 2.806Z"/>
-                  </svg></td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td><img src="../imagenes/herramientasArmas/azadaAcero.png" alt="Azada de acero"></td>
-                  <td>Azada</td>
-                  <td>Herramienta inicial</td>
-                  <td>N/A</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td><img src="../imagenes/herramientasArmas/azadaOro.png" alt="Azada de oro"></td>
-                  <td>Azada</td>
-                  <td>Herramienta inicial</td>
-                  <td>N/A</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td><img src="../imagenes/herramientasArmas/azadaIridio.png" alt="Azada de iridio"></td>
-                  <td>Azada</td>
-                  <td>Herramienta inicial</td>
-                  <td>N/A</td>
-                  <td></td>
-                </tr>
-                <!--Picos-->
-                <tr>
-                  <td><img src="../imagenes/herramientasArmas/pico.png" alt="Pico"></td>
-                  <td>Azada</td>
-                  <td>Herramienta inicial</td>
-                  <td>N/A</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td><img src="../imagenes/herramientasArmas/picoCobre.png" alt="Pico de cobre"></td>
-                  <td>Azada</td>
-                  <td>Herramienta inicial</td>
-                  <td>N/A</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td><img src="../imagenes/herramientasArmas/picoAcero.png" alt="Pico de acero"></td>
-                  <td>Azada</td>
-                  <td>Herramienta inicial</td>
-                  <td>N/A</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td><img src="../imagenes/herramientasArmas/picoOro.png" alt="Pico de oro"></td>
-                  <td>Azada</td>
-                  <td>Herramienta inicial</td>
-                  <td>N/A</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td><img src="../imagenes/herramientasArmas/picoIridio.png" alt="Pico de iridio"></td>
-                  <td>Azada</td>
-                  <td>Herramienta inicial</td>
-                  <td>N/A</td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table></div>
-          <div class="mt-4 p-5 rounded" id="jumbotron"> <p>Info herramientas</p></div>
-         
+          </nav>
+        </div>
+  
+  
+        <div class="col-md-9">
+          <section>
+            
             <div class="mt-4 p-5 rounded" id="jumbotron"> 
-              <p>Búsqueda de armas:</p>  
-    <input class="form-control" id="myInputArma" type="text" placeholder="Search..">
-    <br><p>Armas</p>
-            <table class="table table-striped" id="myTableArma">
-              <thead>
-                <tr>
-                  <th>Imagen</th>
-                  <th>Nombre</th>
-                  <th>Precio</th>
-                  <th>Ingredientes</th>
-                  <th>Mejoras</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><img src="" alt="">Img</td>
-                  <td>Espada</td>
-                  <td>Herramienta inicial</td>
-                  <td>N/A</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td><img src="" alt="">Img</td>
-                  <td>Espada</td>
-                  <td>Herramienta inicial</td>
-                  <td>N/A</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td><img src="" alt="">Img</td>
-                  <td>Espada</td>
-                  <td>Herramienta inicial</td>
-                  <td>N/A</td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table></div>
-          <div class="mt-4 p-5 rounded" id="jumbotron"> <p>Info armas</p></div>
-        </section>
+              <p>Búsqueda de herramientas:</p>  
+    <input class="form-control" id="myInputHerramienta" type="text" placeholder="Search..">
+    <br>
+              <p>Herramientas</p>
+              <table class="table table-striped" id="myTableHerramienta">
+                <thead>
+                  <tr>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Ingredientes</th>
+                    <th>Mejoras</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!--Azadas-->
+                  <tr>
+                    <td><img src="../imagenes/herramientasArmas/azada.png" alt="Azada"></td>
+                    <td>Azada</td>
+                    <td>Herramienta inicial</td>
+                    <td>N/A</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><img src="../imagenes/herramientasArmas/azadaCobre.png" alt="Azada de cobre"></td>
+                    <td>Azada</td>
+                    <td>2000 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-coin" viewBox="0 0 16 16">
+                      <path d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z"/>
+                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                      <path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/>
+                    </svg></td>
+                    <td>Lingote de cobre <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-5-circle" viewBox="0 0 16 16">
+                      <path d="M1 8a7 7 0 1 1 14 0A7 7 0 0 1 1 8Zm15 0A8 8 0 1 0 0 8a8 8 0 0 0 16 0Zm-8.006 4.158c-1.57 0-2.654-.902-2.719-2.115h1.237c.14.72.832 1.031 1.529 1.031.791 0 1.57-.597 1.57-1.681 0-.967-.732-1.57-1.582-1.57-.767 0-1.242.45-1.435.808H5.445L5.791 4h4.705v1.103H6.875l-.193 2.343h.064c.17-.258.715-.68 1.611-.68 1.383 0 2.561.944 2.561 2.585 0 1.687-1.184 2.806-2.924 2.806Z"/>
+                    </svg></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><img src="../imagenes/herramientasArmas/azadaAcero.png" alt="Azada de acero"></td>
+                    <td>Azada</td>
+                    <td>Herramienta inicial</td>
+                    <td>N/A</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><img src="../imagenes/herramientasArmas/azadaOro.png" alt="Azada de oro"></td>
+                    <td>Azada</td>
+                    <td>Herramienta inicial</td>
+                    <td>N/A</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><img src="../imagenes/herramientasArmas/azadaIridio.png" alt="Azada de iridio"></td>
+                    <td>Azada</td>
+                    <td>Herramienta inicial</td>
+                    <td>N/A</td>
+                    <td></td>
+                  </tr>
+                  <!--Picos-->
+                  <tr>
+                    <td><img src="../imagenes/herramientasArmas/pico.png" alt="Pico"></td>
+                    <td>Azada</td>
+                    <td>Herramienta inicial</td>
+                    <td>N/A</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><img src="../imagenes/herramientasArmas/picoCobre.png" alt="Pico de cobre"></td>
+                    <td>Azada</td>
+                    <td>Herramienta inicial</td>
+                    <td>N/A</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><img src="../imagenes/herramientasArmas/picoAcero.png" alt="Pico de acero"></td>
+                    <td>Azada</td>
+                    <td>Herramienta inicial</td>
+                    <td>N/A</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><img src="../imagenes/herramientasArmas/picoOro.png" alt="Pico de oro"></td>
+                    <td>Azada</td>
+                    <td>Herramienta inicial</td>
+                    <td>N/A</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><img src="../imagenes/herramientasArmas/picoIridio.png" alt="Pico de iridio"></td>
+                    <td>Azada</td>
+                    <td>Herramienta inicial</td>
+                    <td>N/A</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table></div>
+            <div class="mt-4 p-5 rounded" id="jumbotron"> <p>Info herramientas</p></div>
+           
+              <div class="mt-4 p-5 rounded" id="jumbotron"> 
+                <p>Búsqueda de armas:</p>  
+      <input class="form-control" id="myInputArma" type="text" placeholder="Search..">
+      <br><p>Armas</p>
+              <table class="table table-striped" id="myTableArma">
+                <thead>
+                  <tr>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Ingredientes</th>
+                    <th>Mejoras</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><img src="" alt="">Img</td>
+                    <td>Espada</td>
+                    <td>Herramienta inicial</td>
+                    <td>N/A</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><img src="" alt="">Img</td>
+                    <td>Espada</td>
+                    <td>Herramienta inicial</td>
+                    <td>N/A</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><img src="" alt="">Img</td>
+                    <td>Espada</td>
+                    <td>Herramienta inicial</td>
+                    <td>N/A</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table></div>
+            <div class="mt-4 p-5 rounded" id="jumbotron"> <p>Info armas</p></div>
+          </section>
+        </div>
       </div>
-    </div>
-
-    <script>
-      $(document).ready(function(){
-       $("#myInputHerramienta").on("keyup", function() {
-       var value = $(this).val().toLowerCase();
-       $("#myTableHerramienta tr").filter(function() {
-       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
-       });
-       });
-      });
-      $(document).ready(function(){
-       $("#myInputArma").on("keyup", function() {
-       var value = $(this).val().toLowerCase();
-       $("#myTableArma tr").filter(function() {
-       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
-       });
-       });
-      });
-      </script>
-      
+  
+      <script>
+        $(document).ready(function(){
+         $("#myInputHerramienta").on("keyup", function() {
+         var value = $(this).val().toLowerCase();
+         $("#myTableHerramienta tr").filter(function() {
+         $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+         });
+         });
+        });
+        $(document).ready(function(){
+         $("#myInputArma").on("keyup", function() {
+         var value = $(this).val().toLowerCase();
+         $("#myTableArma tr").filter(function() {
+         $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+         });
+         });
+        });
+        </script>
 </body>
 
 </html>
