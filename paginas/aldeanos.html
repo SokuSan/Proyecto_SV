@@ -77,10 +77,54 @@
 
 
       <div class="col-md-9 flex-wrap">
+        <div class="offcanvas offcanvas-end" id="casarse">
+          <div class="offcanvas-header">
+            <h3 class="offcanvas-title">¿De qué puede servir casarse?</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+          </div>
+          <div class="offcanvas-body">
+            <p>Tu pareja te ayudará de vez en cuando con la granja.</p>
+            <p>¡Cada uno tiene su historia!</p>
+            <p>Si cambias de idea, siempre puedes divorciarte por un módico precio.</p>
+            <small>También puedes tener bebés en cierto punto.</small>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bebes">
+              Razones para tener bebés
+            </button>
+          </div>
+        </div>
 
+        <div class="modal" id="bebes">
+          <div class="modal-dialog">
+            <div class="modal-content">
+        
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">No las hay</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+        
+              <!-- Modal body -->
+              <div class="modal-body">
+                <p>No los tengas.</p>
+                <p>Pero si ya los has tenido, siempre puedes deshacerte de ellos por tan sólo una maldición</p>
+              </div>
+        
+              <!-- Modal footer -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+        
+            </div>
+          </div>
+        </div>
         <!-- Añadir carousel aquí-->
         <div id="carouselFade" class="carousel slide carousel-fade carousel-container" data-bs-ride="carousel">
           <h3>Aldeanos casables</h3>
+
+          <button class="btn btn-primary p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#casarse">
+            Utilidades al casarse
+          </button>
+
           <div class="carousel-inner">
             <div class="carousel-item active carousel-item-left ">
               <div class="row">
