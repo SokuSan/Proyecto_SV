@@ -73,5 +73,66 @@
           </div>
         </nav>
       </div>
+      
+      <div class="col-md-9">
+        <section>
+          <div class="mt-4 p-5 rounded" id="jumbotron">
+            <h2 class="text-warning">CORRAL</h2>
+            <img class="mx-auto d-block img-fluid" src="../imagenes/animales/Corral.png" alt="Corral">
+            <br>
+
+            <div class="button-group">
+              <div class="button-group">
+                
+                <div class="button-group">
+                  <button onclick="showDiv(1)" class="active">Gallinas</button>
+                  <button onclick="showDiv(2)">Conejos</button>
+                  <button onclick="showDiv(3)">Patos</button>
+                </div>
+                
+                
+            </div>
+            
+          </div>
+          <div id="div1">
+            <img src="../imagenes/animales/gallinaBlanca.png" alt="Gallina Blanca" >
+            <img src="../imagenes/animales/gallinaMarron.png" alt="Gallina Marrón">
+            <p>Las gallinas sueltan huevos con los que puedes hacer mayonesa. El color del huevo depende del color de la gallina, cosa que es aleatoria cuando compras la gallina en el Rancho de Marnie. El color de los huevos no afecta en nada a la mayonesa. Cuanto más cuidas a las gallinas, más amor reciben y por ende crecen y te dan huevos más grandes.</p>
+            <img src="../imagenes/animales/huevoBlancoChiquito.png" alt="Huevo Blanco">
+            <img src="../imagenes/animales/huevoMarronGrande.png" alt="Huevo Marrón">
+          </div>
+          
+          <div id="div2" class="hidden">
+            <img src="../imagenes/animales/pato.png" alt="Pato">
+            <p></p>
+            <img src="../imagenes/animales/huevoPato.png" alt="Huevo de Pato">
+            <img src="../imagenes/animales/plumaPato.png" alt="Pluma">
+          </div>
+          
+          <div id="div3" class="hidden">
+            <img src="../imagenes/animales/conejo.png" alt="Conejo">
+            <p></p>
+            <img src="../imagenes/animales/lanaConejo.png" alt="Lana de Conejo">
+            <img src="../imagenes/animales/pataConejo.png" alt="Pata de Conejo">
+          </div>
+        </section>
+      </div>
+      <script>
+        function showDiv(divIndex) {
+          var divs = document.querySelectorAll('[id^="div"]');
+          for (var i = 0; i < divs.length; i++) {
+            divs[i].classList.add("hidden");
+          }
+        
+          var selectedDiv = document.getElementById("div" + divIndex);
+          selectedDiv.classList.remove("hidden");
+        
+          var buttons = document.querySelectorAll('.button-group button');
+          for (var j = 0; j < buttons.length; j++) {
+            buttons[j].classList.remove("active");
+          }
+          buttons[divIndex - 1].classList.add("active");
+        }
+        </script>
 </body>
 </html>
