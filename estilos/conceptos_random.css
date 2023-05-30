@@ -79,8 +79,16 @@ header {
     color: rgb(0, 0, 0);
   }
   
+  .text-purple{
+    color: #6f42c1;
+  }
   
-  
+  .bg-purple{
+    background-color:#1b003a;
+    border-radius: 10px;
+    padding: 10px;
+    opacity: 92%;
+  }
   
   
   
