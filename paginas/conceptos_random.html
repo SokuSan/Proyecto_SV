@@ -241,47 +241,81 @@
           <div class="mt-4 p-5 rounded" id="jumbotron">
 
             <h3>Salud</h3>
-            <img src="../imagenes/barraVidaEnergia.png" alt="Barras" class="float-start img-fluid">
+            <img src="../imagenes/barraVidaEnergia.png" alt="Barras" class="float-end img-fluid">
             <p>La salud se mide mediante una barra situada junto a la barra de energía en la esquina inferior derecha de
               la interfaz de usuario (UI). La barra de salud sólo es visible mientras se está dentro de Las minas, el
               Bosque secreto, el Criadero de babas, la Caverna Calavera, la Madriguera de bichos mutantes, la Mina de
-              cantera, la Mazmorra del volcán, o cuando el medidor no está lleno. Fuera de las Minas, las formas más
-              comunes de perder salud son ser atropellado por el tren en el Ferrocarril, o por las Babas en el Bosque
-              secreto o en el Criadero de babas. </p>
-            <p>El jugador se desmayará cuando la salud llegue a cero. Mientras esté desmayado, el jugador perderá oro y
-              objetos del inventario. Se puede recuperar un objeto perdido a través del "Servicio de recuperación de
-              objetos" en el Gremio de aventureros. La cantidad de oro que se pierde está determinada por el oro
-              disponible actualmente del jugador, hasta 5000 <svg xmlns="http://www.w3.org/2000/svg" width="16"
-                height="16" fill="currentColor" class="bi bi-coin" viewBox="0 0 16 16">
-                <path
-                  d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z" />
-                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                <path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z" />
-              </svg>. </p>
+              cantera, la Mazmorra del volcán, o cuando el medidor no está lleno. </p>
             <br>
+            <button type="button" class="btn btn-warning" id="toastbtnEnergia" data-bs-toggle="tooltip" title="¡Pues púlsame!">¿Quieres saber más?</button>
 
+            <div id="toastSalud" class="toast">
+              <div class="toast-header">
+                <strong class="me-auto">Más info de salud</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+              </div>
+              <div class="toast-body">
+                <p> Fuera de las Minas, las formas más
+                  comunes de perder salud son ser atropellado por el tren en el Ferrocarril, o por las Babas en el
+                  Bosque
+                  secreto o en el Criadero de babas.</p>
+                <p>El jugador se desmayará cuando la salud llegue a cero. Mientras esté desmayado, el jugador perderá
+                  oro y
+                  objetos del inventario. Se puede recuperar un objeto perdido a través del "Servicio de recuperación de
+                  objetos" en el Gremio de aventureros. La cantidad de oro que se pierde está determinada por el oro
+                  disponible actualmente del jugador, hasta 5000 <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-coin" viewBox="0 0 16 16">
+                    <path
+                      d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z" />
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                    <path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z" />
+                  </svg>. </p>
+
+              </div>
+            </div>
+          </div>
+
+
+
+          <br>
+          <div class="mt-4 p-5 rounded" id="jumbotron">
             <h3>Energía</h3>
             <img src="../imagenes/energiaVacia.png" alt="Barras" class="float-end img-fluid">
             <p>Un jugador requiere Energía para usar herramientas, con la excepción de guadañas, armas y la batea de
               cobre, Recoger o mover un cofre con las manos vacías también requiere energía. La energía disponible se
               indica en la barra de energía del jugador, que va disminuyendo a medida que avanza el día. </p>
-            <p>La energía se puede reponer al máximo comiendo alimentos con energía positiva. Pero hay alimentos que
-              pueden reducir la ejergía. </p>
-            <p>El jugador se agota al llegar a 0 de energía, indicado por una burbuja de diálogo X sobre la cabeza del
-              jugador y el aviso "Te sientes lento por el esfuerzo excesivo". La velocidad de movimiento del jugador se
-              reduce significativamente y las cañas de pescar ya no se pueden lanzar. Se pueden utilizar otras
-              herramientas que consuman energía, pero el nivel de energía del jugador se vuelve negativo. A -15 de
-              energía, el jugador se desmaya, terminando el día. Si el jugador se desmaya en cualquier lugar fuera de la
-              casa, el jugador perderá el 10% de su dinero hasta 1000 <svg xmlns="http://www.w3.org/2000/svg" width="16"
-                height="16" fill="currentColor" class="bi bi-coin" viewBox="0 0 16 16">
-                <path
-                  d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z" />
-                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                <path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z" />
-              </svg>. </p>
+            
+
+              
             <p>Dormir restaura el nivel de energía inicial del jugador para el día siguiente. Acostarse a las 12:00 AM o
               antes normalmente restaura la energía al máximo. Sin embargo, si el jugador se acuesta tarde, se desmaya o
               está agotado, la cantidad de energía recuperada se reduce. </p>
+              <button type="button" class="btn btn-warning" id="toastbtnEnergia2" data-bs-toggle="tooltip" title="¡Pues púlsame!">¿Quieres saber más?</button>
+
+              <div id="toastEnergia" class="toast">
+                <div class="toast-header">
+                  <strong class="me-auto">Más info de energía</strong>
+                  <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+                </div>
+                <div class="toast-body" >
+                  <p>La energía se puede reponer al máximo comiendo alimentos con energía positiva. Pero hay alimentos que
+                    pueden reducir la ejergía. </p>
+                  <p>El jugador se agota al llegar a 0 de energía, indicado por una burbuja de diálogo X sobre la cabeza del
+                    jugador y el aviso "Te sientes lento por el esfuerzo excesivo". La velocidad de movimiento del jugador se
+                    reduce significativamente y las cañas de pescar ya no se pueden lanzar. Se pueden utilizar otras
+                    herramientas que consuman energía, pero el nivel de energía del jugador se vuelve negativo. A -15 de
+                    energía, el jugador se desmaya, terminando el día. Si el jugador se desmaya en cualquier lugar fuera de la
+                    casa, el jugador perderá el 10% de su dinero hasta 1000 <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                      height="16" fill="currentColor" class="bi bi-coin" viewBox="0 0 16 16">
+                      <path
+                        d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z" />
+                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                      <path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z" />
+                    </svg>. </p>
+  
+                </div>
+              </div>
+            
           </div>
           <div class="mt-4 p-5 rounded" id="jumbotron">
             <h3 class="text-purple bg-purple">Suerte</h3>
@@ -295,23 +329,21 @@
                 inundar
                 a todos de buena fortuna. </p>
               <img src="../imagenes/random/estrella.gif" alt="Estrella" class="mx-auto d-block img-fluid"><small
-              class="text-white-50"> Suerte (+0.07 a +0.10)</small> <img
-                src="../imagenes/random/dado.png" alt="Dado">
+                class="text-white-50"> Suerte (+0.07 a +0.10)</small> <img src="../imagenes/random/dado.png" alt="Dado">
             </div>
             <br>
             <div class=" bg-purple">
               <p class="text-purple ">Los espíritus están de buen humor hoy. Creo que tendrás un poco de suerte
                 extra. </p>
               <img src="../imagenes/random/piramide.gif" alt="Piramide" class="mx-auto d-block img-fluid"> <small
-              class="text-white-50">Suerte (+0.02 a +0.07)</small> <img
-                src="../imagenes/random/dado.png" alt="Dado">
+                class="text-white-50">Suerte (+0.02 a +0.07)</small> <img src="../imagenes/random/dado.png" alt="Dado">
             </div>
             <br>
             <div class=" bg-purple">
               <p class="text-purple">Los espíritus se sienten neutros hoy. El día está en tus manos. </p>
               <img src="../imagenes/random/vuelta.gif" alt="Vuelta" class="mx-auto d-block img-fluid"> <small
-              class="text-white-50"> Suerte (-0.02 a +0.02) pero no 0 </small><img
-                src="../imagenes/random/dado.png" alt="Dado">
+                class="text-white-50"> Suerte (-0.02 a +0.02) pero no 0 </small><img src="../imagenes/random/dado.png"
+                alt="Dado">
             </div>
             <br>
             <div class=" bg-purple">
@@ -336,6 +368,23 @@
           </div>
         </section>
       </div>
+
+      <script>
+        document.getElementById("toastbtnEnergia").onclick = function () {
+          var toastElList = [].slice.call(document.querySelectorAll('#toastSalud'))
+          var toastList = toastElList.map(function (toastEl) {
+            return new bootstrap.Toast(toastEl)
+          })
+          toastList.forEach(toast => toast.show())
+        }
+        document.getElementById("toastbtnEnergia2").onclick = function () {
+          var toastElList = [].slice.call(document.querySelectorAll('#toastEnergia'))
+          var toastList = toastElList.map(function (toastEl) {
+            return new bootstrap.Toast(toastEl)
+          })
+          toastList.forEach(toast => toast.show())
+        }
+      </script>
 </body>
 
 </html>
