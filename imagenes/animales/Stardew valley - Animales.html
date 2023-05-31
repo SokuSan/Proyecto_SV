@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://127.0.0.1:5500/paginas/animales.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stardew valley - Animales</title>
+  <link href="./Stardew valley - Animales_files/bootstrap.min.css" rel="stylesheet">
+  <script src="./Stardew valley - Animales_files/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="./Stardew valley - Animales_files/animales.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="./Stardew valley - Animales_files/css2" rel="stylesheet">
+  <link rel="icon" href="http://127.0.0.1:5500/imagenes/animales/gallinaAzul.png" type="image/png">
+</head>
+<body>
+  <header>
+    <h1><img src="./Stardew valley - Animales_files/logo.png" alt="Logo del juego" class="mx-auto d-block"></h1>
+    <h2 class="text-warning">Animales</h2>
+  </header>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <!-- Aquí va el contenido del nav de la página -->
+          <div class="container-fluid" id="navDiv">
+
+            <div class="row">
+              <nav class="navbar navbar-default" role="navigation">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                </div>
+                <div class="navbar-collapse collapse" id="navbarNav">
+                  <ul class="navbar-nav flex-column">
+                    <li class="nav-item pull-left">
+                      <a class="nav-link" href="http://127.0.0.1:5500/paginas/home.html">Home</a>
+                    </li>
+                    <br>
+                    <li class="nav-item pull-left">
+                      <a class="nav-link" href="http://127.0.0.1:5500/paginas/menu_jugador.html">Menú del Jugador</a>
+                    </li>
+                    <br>
+                    <li class="nav-item pull-left">
+                      <a class="nav-link" href="http://127.0.0.1:5500/paginas/tipos_granja.html">Tipos de Granja</a>
+                    </li>
+                    <br>
+                    <li class="nav-item pull-left">
+                      <a class="nav-link" href="http://127.0.0.1:5500/paginas/herramientas_armas.html">Herramientas y Armas</a>
+                    </li>
+                    <br>
+                    <li class="nav-item pull-left">
+                      <a class="nav-link" href="http://127.0.0.1:5500/paginas/conceptos_random.html">Conceptos Random</a>
+                    </li>
+                    <br>
+                    <li class="nav-item pull-left">
+                      <a class="nav-link" href="http://127.0.0.1:5500/paginas/centro_civico.html">Centro Cívico</a>
+                    </li>
+                    <br>
+                    <li class="nav-item pull-left">
+                      <a class="nav-link" href="http://127.0.0.1:5500/paginas/aldeanos.html">Aldeanos</a>
+                    </li>
+                    <br>
+                    <li class="nav-item pull-left">
+                      <a class="nav-link" href="http://127.0.0.1:5500/paginas/animales.html">Animales</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </nav>
+      </div>
+      
+      <div class="col-md-9">
+        <section>
+          <div class="mt-4 p-5 rounded" id="jumbotron">
+            <h2 class="text-warning">CORRAL</h2>
+            <img class="mx-auto d-block img-fluid" src="./Stardew valley - Animales_files/Corral.png" alt="Corral">
+            <br>
+
+            <div class="button-group">
+              <div class="button-group">
+                
+                <div class="button-group">
+                  <button onclick="showDiv(1)" class="">Gallinas</button>
+                  <button onclick="showDiv(2)" class="">Patos</button>
+                  <button onclick="showDiv(3)" class="active">Conejos</button>
+                </div>
+                
+                
+            </div>
+            
+          </div>
+          <div id="div1" class="">
+            <img src="./Stardew valley - Animales_files/gallinaBlanca.png" alt="Gallina Blanca">
+            <img src="./Stardew valley - Animales_files/gallinaMarron.png" alt="Gallina Marrón">
+            <p>Las gallinas sueltan huevos con los que puedes hacer mayonesa. El color del huevo depende del color de la gallina, cosa que es aleatoria cuando compras la gallina en el Rancho de Marnie. El color de los huevos no afecta en nada a la mayonesa. Cuanto más cuidas a las gallinas, más amor reciben y por ende crecen y te dan huevos más grandes.</p>
+            <img src="./Stardew valley - Animales_files/huevoBlancoChiquito.png" alt="Huevo Blanco">
+            <img src="./Stardew valley - Animales_files/huevoMarronGrande.png" alt="Huevo Marrón">
+          </div>
+          
+          <div id="div2" class="hidden">
+            <img src="./Stardew valley - Animales_files/pato.png" alt="Pato">
+            <p>os patos adultos pueden dejar huevos o producir Pluma de pato cada dos días. Los patos felices tienen más probabilidad de producir plumas de pato en vez de huevos.</p>
+            <img src="./Stardew valley - Animales_files/huevoPato.png" alt="Huevo de Pato">
+            <img src="./Stardew valley - Animales_files/plumaPato.png" alt="Pluma">
+          </div>
+          
+          <div id="div3" class="hidden">
+            <img src="./Stardew valley - Animales_files/conejo.png" alt="Conejo">
+            <p>Los conejos adultos felices producirán Lana cada 4 días. Los conejos soltarán lana por sí mismos. Los conejos más felices tienen más posibilidades de producir una Pata de conejo en su lugar.</p>
+            <img src="./Stardew valley - Animales_files/lanaConejo.png" alt="Lana de Conejo">
+            <img src="./Stardew valley - Animales_files/pataConejo.png" alt="Pata de Conejo">
+          </div>
+          
+          <h2 class="text-warning">ESTABLO</h2>
+          <img class="mx-auto d-block img-fluid" src="./Stardew valley - Animales_files/Establo.png" alt="Corral">
+          <br>
+
+          <div class="button-group">
+            <div class="button-group">
+              
+              <div class="button-group">
+                <button onclick="showDov(1)" class="">Vacas</button>
+                <button onclick="showDov(2)">Cabras</button>
+                <button onclick="showDov(3)">Ovejas</button>
+              </div>
+              
+              
+          </div>
+          
+        </div>
+        <div id="dov1" class="hidden">
+          <img src="./Stardew valley - Animales_files/gallinaBlanca.png" alt="Gallina Blanca">
+          <img src="./Stardew valley - Animales_files/gallinaMarron.png" alt="Gallina Marrón">
+          <p>Las gallinas sueltan huevos con los que puedes hacer mayonesa. El color del huevo depende del color de la gallina, cosa que es aleatoria cuando compras la gallina en el Rancho de Marnie. El color de los huevos no afecta en nada a la mayonesa. Cuanto más cuidas a las gallinas, más amor reciben y por ende crecen y te dan huevos más grandes.</p>
+          <img src="./Stardew valley - Animales_files/huevoBlancoChiquito.png" alt="Huevo Blanco">
+          <img src="./Stardew valley - Animales_files/huevoMarronGrande.png" alt="Huevo Marrón">
+        </div>
+        
+        <div id="dov2" class="hidden">
+          <img src="./Stardew valley - Animales_files/pato.png" alt="Pato">
+          <p>os patos adultos pueden dejar huevos o producir Pluma de pato cada dos días. Los patos felices tienen más probabilidad de producir plumas de pato en vez de huevos.</p>
+          <img src="./Stardew valley - Animales_files/huevoPato.png" alt="Huevo de Pato">
+          <img src="./Stardew valley - Animales_files/plumaPato.png" alt="Pluma">
+        </div>
+        
+        <div id="dov3" class="">
+          <img src="./Stardew valley - Animales_files/conejo.png" alt="Conejo">
+          <p>Los conejos adultos felices producirán Lana cada 4 días. Los conejos soltarán lana por sí mismos. Los conejos más felices tienen más posibilidades de producir una Pata de conejo en su lugar.</p>
+          <img src="./Stardew valley - Animales_files/lanaConejo.png" alt="Lana de Conejo">
+          <img src="./Stardew valley - Animales_files/pataConejo.png" alt="Pata de Conejo">
+        </div>
+          
+        </div></section>
+      </div>
+        
+
+
+
+      <script>
+        function showDov(divIndex) {
+          var divs = document.querySelectorAll('[id^="dov"]');
+          for (var i = 0; i < divs.length; i++) {
+            divs[i].classList.add("hidden");
+          }
+        
+          var selectedDiv = document.getElementById("dov" + divIndex);
+          selectedDiv.classList.remove("hidden");
+        
+          var buttons = document.querySelectorAll('.button-group button');
+          for (var j = 0; j < buttons.length; j++) {
+            buttons[j].classList.remove("active");
+          }
+          buttons[divIndex - 1].classList.add("active");
+        }
+        </script>
+      <script>
+        function showDiv(divIndex) {
+          var divs = document.querySelectorAll('[id^="div"]');
+          for (var i = 0; i < divs.length; i++) {
+            divs[i].classList.add("hidden");
+          }
+        
+          var selectedDiv = document.getElementById("div" + divIndex);
+          selectedDiv.classList.remove("hidden");
+        
+          var buttons = document.querySelectorAll('.button-group button');
+          for (var j = 0; j < buttons.length; j++) {
+            buttons[j].classList.remove("active");
+          }
+          buttons[divIndex - 1].classList.add("active");
+        }
+        </script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</div></div></body></html>

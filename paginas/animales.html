@@ -85,9 +85,9 @@
               <div class="button-group">
                 
                 <div class="button-group">
-                  <button onclick="showDiv(1)" class="active">Gallinas</button>
-                  <button onclick="showDiv(2)">Conejos</button>
-                  <button onclick="showDiv(3)">Patos</button>
+                  <button onclick="showDiv(1)">Gallinas</button>
+                  <button onclick="showDiv(2)">Patos</button>
+                  <button onclick="showDiv(3)">Conejos</button>
                 </div>
                 
                 
@@ -104,19 +104,90 @@
           
           <div id="div2" class="hidden">
             <img src="../imagenes/animales/pato.png" alt="Pato">
-            <p></p>
+            <p>os patos adultos pueden dejar huevos o producir Pluma de pato cada dos días. Los patos felices tienen más probabilidad de producir plumas de pato en vez de huevos.</p>
             <img src="../imagenes/animales/huevoPato.png" alt="Huevo de Pato">
             <img src="../imagenes/animales/plumaPato.png" alt="Pluma">
           </div>
           
           <div id="div3" class="hidden">
             <img src="../imagenes/animales/conejo.png" alt="Conejo">
-            <p></p>
+            <p>Los conejos adultos felices producirán Lana cada 4 días. Los conejos soltarán lana por sí mismos. Los conejos más felices tienen más posibilidades de producir una Pata de conejo en su lugar.</p>
             <img src="../imagenes/animales/lanaConejo.png" alt="Lana de Conejo">
             <img src="../imagenes/animales/pataConejo.png" alt="Pata de Conejo">
           </div>
+          
+          <h2 class="text-warning">ESTABLO</h2>
+          <img class="mx-auto d-block img-fluid" src="../imagenes/animales/Establo.png" alt="Corral">
+          <br>
+
+          <div class="button-group">
+            <div class="button-group">
+              
+              <div class="button-group">
+                <button onclick="showDov(1)">Vacas</button>
+                <button onclick="showDov(2)">Cabras</button>
+                <button onclick="showDov(3)">Ovejas</button>
+              </div>
+              
+              
+          </div>
+          
+        </div>
+        <div id="dov1">
+          <img src="../imagenes/animales/vacaBlanca.png" alt="Vaca Blanca" >
+          <img src="../imagenes/animales/vacaMarron.png" alt="Vaca Marrón">
+          <p>Las Vacas adultas producirán Leche diariamente. Si alcanzan una mayor amistad, producirán Leche XXL, que es mucho más valiosa.</p>
+          <img src="../imagenes/animales/lecheChiquita.png" alt="Leche pequeña">
+          <img src="../imagenes/animales/lecheGrande.png" alt="Leche grande">
+        </div>
+        
+        <div id="dov2" class="hidden">
+          <img src="../imagenes/animales/cabra.png" alt="Cabra">
+          <p>Las cabras suelen producir leche cada dos días.</p>
+          <img src="../imagenes/animales/lecheCabraGrande.png" alt="Leche de cabra pequeña">
+          <img src="../imagenes/animales/lecheCabraBigGrande.png" alt="Leche de cabra Grande">
+        </div>
+        
+        <div id="dov3" class="hidden">
+          <img src="../imagenes/animales/oveja.png" alt="Conejo">
+          <p>Las ovejas pueden esquilarse cuando les crece el pelaje. Normalmente, a una oveja le crecerá el pelaje cada 3 días si ha sido alimentada y tiene al menos 70 puntos de felicidad.
+          Si el jugador tiene 900 o más de Amistad con la oveja y la ha acariciado al menos una vez, el tiempo de producción se reducirá a dos días.</p>
+          <img src="../imagenes/animales/lanaConejo.png" alt="Lana de Conejo">
+        </div>
+          
+<br>
+<h4>Herramientas necesarias</h4>
+        <div class="dropdown">
+          <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+Herramientas          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" target="_blank" href="https://es.stardewvalleywiki.com/Cubeta_lechera">Cubeta Lechera</a></li>
+            <li><a class="dropdown-item" target="_blank" href="https://es.stardewvalleywiki.com/Tijeras_de_esquilar">Tijeras de esquilar</a></li>
+            <li><a class="dropdown-item" target="_blank" href="https://es.stardewvalleywiki.com/Incubadora">Incubadora</a></li>
+            <li><a class="dropdown-item" target="_blank" href="https://es.stardewvalleywiki.com/Radiador">Radiador</a></li>
+          </ul>
+        </div>
+
         </section>
       </div>
+        
+
+
+
+      <script>
+        function showDov(divIndex) {
+          var divs = document.querySelectorAll('[id^="dov"]');
+          for (var i = 0; i < divs.length; i++) {
+            divs[i].classList.add("hidden");
+          }
+        
+          var selectedDiv = document.getElementById("dov" + divIndex);
+          selectedDiv.classList.remove("hidden");
+        
+          
+          buttons[divIndex - 1].classList.add("active");
+        }
+        </script>
       <script>
         function showDiv(divIndex) {
           var divs = document.querySelectorAll('[id^="div"]');
@@ -126,11 +197,9 @@
         
           var selectedDiv = document.getElementById("div" + divIndex);
           selectedDiv.classList.remove("hidden");
+          
         
-          var buttons = document.querySelectorAll('.button-group button');
-          for (var j = 0; j < buttons.length; j++) {
-            buttons[j].classList.remove("active");
-          }
+          
           buttons[divIndex - 1].classList.add("active");
         }
         </script>
