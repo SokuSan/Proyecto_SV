@@ -66,10 +66,16 @@ header {
     line-height: 1.5;
   }
 
+  #jumbotron {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: rgb(0, 0, 0);
+  }
   
   
   
-  
+  .carousel-control-prev {
+    z-index: 20; /* Ajusta el z-index según sea necesario */
+  }
   
   
 
