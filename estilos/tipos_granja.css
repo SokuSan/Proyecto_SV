@@ -71,8 +71,18 @@ header {
     color: rgb(0, 0, 0);
   }
   
-  
-  
+  .carousel-item-left img {
+    margin-right: 0 auto;
+    margin-left: 120px;
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+  }
+  .fondito{
+    --bs-bg-opacity: 30%;
+  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+  height: 495px;
+  }
   .carousel-control-prev {
     z-index: 20; /* Ajusta el z-index según sea necesario */
   }
